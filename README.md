@@ -33,6 +33,25 @@ Example
 python3 main.py --input_image_path ./data/test_images/hetro_homo_cap_flash.mp4 --nms_iou 0.1 --conf 0.2 --batch_size 64 --create_plots
 ```
 
+## Usage (vials & liquids in images/videos):
+Place the image/video in ./data/test_images.
+Then from root run
+```
+python3 yolov5/detect.py \
+  --weights <liquid OR vial>/best.pt \
+  --img <img size> \
+  --conf <set minimum confidence> \
+  --source data/<img file>
+```
+Example
+```
+python3 yolov5/detect.py \
+  --weights liquid/best.pt \
+  --img 640 \
+  --conf 0.65 \
+  --source data/copy_6493_5wt_dmm_9day_RT.jpeg
+```
+
 ## Usage (camera):
 From root run
 ```
