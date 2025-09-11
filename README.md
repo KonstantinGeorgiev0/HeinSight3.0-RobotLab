@@ -9,7 +9,7 @@ dataset: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11053823.svg)](http
 ## Installation
 Clone `yolov5`
 ```
-git clone https://github.com/ultralytics/yolov5
+git clone https://github.com/KonstantinGeorgiev0/yolov5.git
 ```
 Install python packages via commands:
 ```
